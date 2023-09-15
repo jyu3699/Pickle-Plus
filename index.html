@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="/CSS/style.css">
+</head>
+<body>
+  <div id="wrap">
+    <div id="header">
+      <span>Steve</span>
+      <!-- <img src="" alt="로고"> -->
+      <div class="menu">
+        <div class="bar bar1"></div>
+        <div class="bar bar2"></div>
+        <div class="bar bar3"></div>
+      </div>
+    </div>
+    <div class="side-bar">
+      <div class="side-bar-ca">
+        <ul>
+          <li>
+            <a href="#">인기 순위 TOP10</a>
+          </li>
+          <li>
+            <a href="#"></a>
+          </li>
+          <li>
+            <a href="#"></a>
+          </li>            
+        </ul>        
+      </div>
+    </div>
+    
+    <div id="main">
+      <div class="main-content">
+        <div>
+          <h1>2023년 영화 순위 TOP10</h1>
+          <span>1위 : --</span>
+          <img src="" alt="">
+        </div>
+        <span><a href="#"></a></span>
+        
+      </div>
+    </div>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+  <script>
+    let sw = 0;
+    $('.menu').click(function(){
+      
+      sw = !sw
+      if (sw) {
+        $('.menu').addClass('on');
+      } else {
+        $('.menu').removeClass('on');
+      }
+    })
+    $('.menu').click(function() {
+    $('.side-bar').toggleClass('active');
+    $('.overlay').toggleClass('active');
+});
+
+
+  </script>
+</body>
+</html>
